@@ -4,8 +4,6 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { TemplateStoreProvider } from "@/providers/template-store-provider"
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GeistMono } from "geist/font/mono"
 import { GeistSans } from "geist/font/sans"
 
@@ -172,9 +170,6 @@ export default async function RootLayout({
         </ThemeProvider>
 
         <Toaster />
-
-        <SpeedInsights />
-        <Analytics />
       </body>
     </html>
   )

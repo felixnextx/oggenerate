@@ -5,7 +5,9 @@
       "Bash(pnpm install:*)",
       "Bash(pnpm add:*)",
       "Bash(dos2unix:*)",
-      "Bash(pnpm build)"
+      "Bash(pnpm build)",
+      "Bash(test:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

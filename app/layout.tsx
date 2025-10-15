@@ -17,24 +17,53 @@ import { MobileNav } from "@/components/nav/mobile-nav"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://imgsrc.io"),
-  title: "imgsrc",
-  description: "Generate beautiful Open Graph images with zero effort.",
+  metadataBase: new URL("https://og.htryit.com/"),
+  title: "OG 图片生成器 - Felix's Blog | 在线生成精美社交媒体分享图",
+  description: "免费在线 Open Graph 图片生成工具，支持多种模板样式，轻松创建适用于 Twitter、Facebook、LinkedIn 等社交平台的精美分享图。零配置，即时预览，一键导出高质量 OG 图片。",
+  keywords: [
+    "OG图片生成",
+    "Open Graph",
+    "社交媒体图片",
+    "Twitter Card",
+    "Facebook分享图",
+    "博客配图",
+    "SEO优化",
+    "图片生成器",
+    "在线工具",
+    "Felix Blog"
+  ],
   openGraph: {
-    title: "imgsrc",
-    description: "Generate beautiful Open Graph images with zero effort.",
+    title: "OG 图片生成器 - Felix's Blog",
+    description: "免费在线 Open Graph 图片生成工具，支持多种模板样式，轻松创建精美社交媒体分享图",
     type: "website",
-    url: "https://imgsrc.io",
-    siteName: "imgsrc",
+    url: "https://og.htryit.com/",
+    siteName: "Felix's Blog - OG 图片生成器",
     images: [
       {
-        url: "https://imgsrc.io/og.png",
+        url: "https://og.htryit.com/og.png",
         width: 1200,
         height: 630,
-        alt: "imgsrc - Generate beautiful Open Graph images with zero effort.",
+        alt: "OG 图片生成器 - 在线生成精美 Open Graph 社交分享图",
       },
     ],
-    locale: "en_US",
+    locale: "zh_CN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OG 图片生成器 - Felix's Blog",
+    description: "免费在线 Open Graph 图片生成工具，支持多种模板样式",
+    images: ["https://og.htryit.com/og.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 }
 

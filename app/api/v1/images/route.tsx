@@ -28,7 +28,7 @@ export const POST = async (request: NextRequest) => {
     fontsResponses.map((res) => res.arrayBuffer())
   )
 
-  const { Template } = templates[convertedTemplate.name]
+  const { Template } = templates[convertedTemplate.name as keyof typeof templates]
 
   const response = new ImageResponse(
     (

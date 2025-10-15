@@ -3,7 +3,9 @@
     "allow": [
       "Bash(pnpm update:*)",
       "Bash(pnpm install:*)",
-      "Bash(pnpm add:*)"
+      "Bash(pnpm add:*)",
+      "Bash(dos2unix:*)",
+      "Bash(pnpm build)"
     ],
     "deny": [],
     "ask": []

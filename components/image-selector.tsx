@@ -39,7 +39,7 @@ export function ImageSelector({
         ref={inputElement}
         className="hidden"
         type="file"
-        accept=".png, .jpg, .jpeg, .svg"
+        accept=".png, .jpg, .jpeg, .svg, .webp"
         multiple={false}
         onChange={(e) => {
           if (!e.target.files) return
